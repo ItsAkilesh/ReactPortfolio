@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/header-img.svg";
+import headerImg from "../assets/img/AREmoji.png";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [  "A Designer", "A Developer", "A Cloud Engineer" ];
+  const toRotate = [  "Designer", "Web Developer", "Cloud Engineer" ];
   const period = 2000;
 
   useEffect(() => {
@@ -55,8 +55,8 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <h1>{`Hey👋 I'm Akilesh`} <br/> <span className="txt-rotate" dataPeriod="100" data-rotate='[ "A Designer", "A Developer", "A Cloud Engineer"]'><span className="wrap">{text}</span></span></h1>
-                <p>Technology is what drives me in life.</p>
+                <h1>{`Hey👋 I'm Akilesh`} </h1><h2><br/> <span className="txt-rotate" dataPeriod="100" data-rotate='[ "Designer", " Web Developer", "Cloud Engineer"]'><span className="wrap">I'm a {text}</span></span></h2>
+                <p>Our world is a pretty place but there are times when we look at it and think, that, we can do something better. And I believe technology is the path to it. Dedicated to making the world a better place.</p>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>

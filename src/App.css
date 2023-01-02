@@ -232,9 +232,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Banner Css ************/
 .banner {
-  margin-top: 0;
-  padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-bg.png');
+
+  padding: 260px 0 90px 0;
+  background-image: url('./assets/img/banner_bg.png');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -283,7 +283,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-left: 25px;
 }
 .banner img {
+  margin-top: -50px;
   animation: updown 3s linear infinite;
+  margin-bottom: 100px;
 }
 @keyframes updown {
     0% {
@@ -302,24 +304,28 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Skills Css ************/
 .skill {
+  background: rgba(0, 0, 0, 0.376);
   padding: 170px 0 190px 0;
   position: relative;
 }
 .skill-bx {
-  background: rgba(93, 93, 93, 0.089);
+
+  background-image: url('./assets/img/skills_bg.png');
+  background-position: center;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
   margin-top: -60px;
+  box-shadow: 0 0 900px #7c12919f;
 }
-.skill h2 {
+.skills-title {
 	font-size: 45px;
 	font-weight: 700;
 }
-.skill p {
-    color: #B8B8B8;
-    font-size: 18px;
-    letter-spacing: 0.8px;
+.skills-sub {
+    color: #dbdbdb;
+    font-weight: bold;
+    font-size: 20px;
     line-height: 1.5em;
     margin: 14px 0 75px 0;
 }
@@ -332,21 +338,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 50%;
   margin: 0 auto 15px auto;
 }
-.background-image-left {
-  top: 8%;
-  position: absolute;
-  bottom: 0;
-  width: 40%;
-  z-index: -4;
-}
-.background-image-right {
-  top: 0;
-  position: absolute;
-  rotate: -180deg;
-  right:10%;
-  bottom: 15%;
-  width: 40%;
-  z-index: -4;
+
+.grid { 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  grid-gap: 30px;
+  align-items: stretch;
+  }
+.grid img {
+  border: none;
+  max-width: 90%;
 }
 
 /************ Projects Css ************/
