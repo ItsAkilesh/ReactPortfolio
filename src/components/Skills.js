@@ -57,15 +57,15 @@ export const Skills = () => {
               <p className='skills-sub'>I've worked with multiple modern & powerful technologies to make quality products.<br></br></p>
 
               <div class="grid">
-                <img src={aws} />
+                <img src={aws} alt='aws'/>
                 <img src={terraform} />
                 <img src={docker} />
                 <img src={nginx} />
                 <img src={mongo} />
                 <img src={python} />
-                <img src={c} />
-                <img src={cpp} />
-                <img src={java} />
+                <img src={c} className="hidden-mobile" />
+                <img src={cpp} className="hidden-mobile" />
+                <img src={java} className="hidden-mobile" />
                 <img src={js} />
                 <img src={figma} />
                 <img src={sketch} />
@@ -75,7 +75,7 @@ export const Skills = () => {
                 <img src={sql} />
                 <img src={spring} />
                 <img src={react} />
-                <img src={html} />
+                <img src={html} className="hidden-mobile" />
                 <img src={css} />
                 <img src={django} />
                 <img src={flask} />

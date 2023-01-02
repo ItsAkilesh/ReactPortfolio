@@ -7,13 +7,12 @@ export const Newsletter = () => {
         <div className="newsletter-bx wow slideInUp">
           <Row>
               <h3>Oh yes, I can tell you're looking for it.<br/> Find my resume below 👇<br/><br/> 
+              </h3>        
               <div className="resume-button">
-                <a href="https://www.google.com/">
+                <a href="#">
                   <button type="button">Resume</button>
                 </a>
               </div>
-
-              </h3>        
           </Row>
         </div>
       </Col>
